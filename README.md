@@ -11,7 +11,7 @@ dotnet add package KoboldSharp
 
 ## With Package Manager
 ```
-NuGet\Install-Package KoboldSharp -Version 0.0.2
+NuGet\Install-Package KoboldSharp
 ```
 
 # Usage
