@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>KoboldSharp</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>pboardman</Authors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>KoboldSharp</Title>
+    <Description>Koboldcpp Rest API wrapper for C#</Description>
+    <Copyright>MIT</Copyright>
+    <PackageTags>koboldcpp,kobold,ai,llama</PackageTags>
+    <OutputType>Library</OutputType>
+    <PackageProjectUrl>https://github.com/pboardman/KoboldSharp</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/pboardman/KoboldSharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
