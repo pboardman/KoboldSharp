@@ -33,5 +33,23 @@ namespace KoboldSharp
             return JsonSerializer.Deserialize<ModelOutput>(content);
             
         }
+
+        public async Task<ModelOutput> Check()
+        {
+            var payload = new StringContent(string.Empty);
+            var response = await _client.PostAsync($"{_baseUri}/api/extra/generate/check", payload);
+            response.EnsureSuccessStatusCode();
+            var content = await response.Content.ReadAsStringAsync();
+            content = content.Trim();
+            return JsonSerializer.Deserialize<ModelOutput>(content);
+
+        }
+
+        public async void Abort()
+        {
+            var payload = new StringContent(string.Empty);
+            var response = await _client.PostAsync($"{_baseUri}/api/v1/abort", payload);
+            await response.Content.ReadAsStringAsync();
+        }
     }
 }
